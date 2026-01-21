@@ -57,8 +57,8 @@ php artisan migrate
 
 #Clonar el repositorio:
 
-git clone https://github.com/tu-usuario/inventario-api.git
-cd inventario-api
+git clone https://github.com/sandra14-h/Prueba_tecnica_Sandra_Homez.git
+cd Prueba_tecnica_Sandra_Homez
 Instalar dependencias:
 
 -composer install
