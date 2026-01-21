@@ -1,0 +1,272 @@
+{
+  "info": {
+    "_postman_id": "3293d985-ff61-4765-83b4-f601339a1c3a",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "37709717"
+  },
+  "item": [
+    {
+      "name": "Token_autenticacion",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"test@test.com\",\r\n  \"password\": \"123456\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/login",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImVtYWlsIjoidGVzdEB0ZXN0LmNvbSIsImlhdCI6MTc2OTAxMDM2MywiZXhwIjoxNzY5MDEzOTYzfQ.7Cuq7ZWnG0rqaXkpCqEzlpxtf0M4fAOxb--PXwP2Wn4",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"Laptop Pro\",\r\n  \"descripcion\": \"Laptop actualizada\",\r\n  \"precio\": 4200000,\r\n  \"stock\": 8,\r\n  \"categoria\": \"Tecnología\"\r\n}\r\n\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/products",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImVtYWlsIjoidGVzdEB0ZXN0LmNvbSIsImlhdCI6MTc2OTAxMDM2MywiZXhwIjoxNzY5MDEzOTYzfQ.7Cuq7ZWnG0rqaXkpCqEzlpxtf0M4fAOxb--PXwP2Wn4",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"Laptop Pro\",\r\n  \"descripcion\": \"Laptop actualizada\",\r\n  \"precio\": 4200000,\r\n  \"stock\": 8,\r\n  \"categoria\": \"Tecnología\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/products/4",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "products",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImVtYWlsIjoidGVzdEB0ZXN0LmNvbSIsImlhdCI6MTc2OTAxMDM2MywiZXhwIjoxNzY5MDEzOTYzfQ.7Cuq7ZWnG0rqaXkpCqEzlpxtf0M4fAOxb--PXwP2Wn4",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/products/3",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "products",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Import",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImVtYWlsIjoidGVzdEB0ZXN0LmNvbSIsImlhdCI6MTc2OTAxMDM2MywiZXhwIjoxNzY5MDEzOTYzfQ.7Cuq7ZWnG0rqaXkpCqEzlpxtf0M4fAOxb--PXwP2Wn4",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "uuid": "04ef06f6-5778-43b2-b9ae-07f674dac9e4",
+              "src": "postman-cloud:///1f0f6958-78ad-4cb0-862e-dba20bf86eff"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/products/import",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "products",
+            "import"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Export",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImVtYWlsIjoidGVzdEB0ZXN0LmNvbSIsImlhdCI6MTc2OTAxMDM2MywiZXhwIjoxNzY5MDEzOTYzfQ.7Cuq7ZWnG0rqaXkpCqEzlpxtf0M4fAOxb--PXwP2Wn4",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "uuid": "15f1e131-cb88-4141-ae0c-3863705f47a4",
+              "src": "postman-cloud:///1f0f6958-78ad-4cb0-862e-dba20bf86eff"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/products/export",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "products",
+            "export"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
