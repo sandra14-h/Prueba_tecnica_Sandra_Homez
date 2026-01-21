@@ -94,3 +94,4 @@ Configuración: En cada petición protegida (Create, Update, Delete, Import, Exp
 Expiración: Los endpoints retornarán un error 401 Unauthorized si el token es inválido o ha expirado.
 
 ### se debe tener en cuanta que para hacer update y delete los id{} deben existir en la tabla sino se generaran errores
+### tener en cuenta que el servidor de XAMPP debe estar activo, esto para ejecucion local.
